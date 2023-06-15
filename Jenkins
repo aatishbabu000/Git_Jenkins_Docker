@@ -1,0 +1,19 @@
+jenkins installation process =>>
+root@jenkins:~# history
+    1  clear
+    2  ls
+    3  ll
+    4  clear
+    5  vi /etc/hostname
+    6  bash
+    7  passwd ubuntu
+    8  passwd ubuntu
+    9  clear
+   10  apt update && apt upgrade -y
+   11  vim /etc/hostname
+   12  reboot
+   13  clear
+   14  apt install openjdk-11-jre
+   15  clear
+   16  history
+root@jenkins:~#

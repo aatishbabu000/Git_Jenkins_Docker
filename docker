@@ -1,0 +1,46 @@
+Suggetation
+docker pull apache
+docker inspect apache | grep "search word"
+sshpass -p password ssh user_1@server1_ip "docker run -it --name web-site-1 -p 8888:80 -v ~/conf.d:/etc/httpd/conf.d -v ~/website1:/var/www/html -v ~/logs:/var/log/httpd apache"
+lb    wb
+dn -> 8888
+docker run -it \
+    --name web-site-1 \
+    -p 8888:80 \
+    -v ~/conf.d:/etc/httpd/conf.d \
+    -v ~/website1:/var/www/html \
+    -v ~/logs:/var/log/httpd \
+
+Date -28 Apr, 2023
+--------------------
+
+docker run -it --name web-site-1 -p 8080:8080 -p 50000:50000 jenkins/jenkins -v ~/conf.d:/etc/httpd/conf.d -v ~/website1:/var/www/html -v ~/logs:/var/log/httpd jenkins/jenkins bash
+
+
+***************************************************************************************88
+mkdir -p $HOME/playground/jcasc
+cd $HOME/playground/jcasc
+nano $HOME/playground/jcasc/Dockerfile
+FROM jenkins/jenkins:latest
+ENV JAVA_OPTS -Djenkins.install.runSetupWizard=false
+docker build -t jenkins:jcasc . 
+  235  docker run -it --name jenkins -p 8080:8080 jenkins:jcasc
+  236  docker ps -a
+  237  docker rm 613186f74ef2
+  238  docker ps -a
+  239  docker run -it -d --name jenkins -p 8080:8080 jenkins:jcasc
+  240  redhat
+  241  clear
+  242  docker ps
+  243  clear
+  244  docker exec -it jenkins
+  245  docker exec -it jenkins bash
+  246  docker ps
+  247  history
+root@docker:~#
+
+
+
+
+
+   

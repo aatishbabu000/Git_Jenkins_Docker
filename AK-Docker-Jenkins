@@ -1,0 +1,252 @@
+Setup at container
+***********************************
+Date - 02 May, 2023
+-----------------------------------------------------------------------
+root@ip-172-31-31-190:~/playground/jcasc# history
+    1  clear
+    2  cat /etc/os-release
+    3  apt update && apt upgrade
+    4  clear
+    5  apt install elinks curl
+    6  apt install vim
+    7  apt install net-tools
+    8  lsof -i:80
+    9  lsof -i:443
+   10  clear
+   11  ls
+   12  ls -ltrh
+   13  ls -ltrha
+   14  ls -la
+   15  clear
+   16  ls
+   17  clear
+   18  sudo apt update
+   19  sudo apt install apt-transport-https ca-certificates curl software-properties-common
+   20  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+   21  sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+   22  apt-cache policy docker-ce
+   23  sudo apt install docker-ce
+   24  sudo systemctl status docker
+   25  docker ps
+   26  docker ps -a
+   27  ls
+   28  clear
+   29  mkdir -p $HOME/playground/jcasc
+   30  cd $HOME/playground/jcasc
+   31  vim $HOME/playground/jcasc/Dockerfile
+   32  docker build -t jenkins:jcasc .
+   33  docker run -it --name jenkins -p 8080:8080 jenkins:jcasc
+   34  docker ps
+   35  docker ps -a
+   36  docker rm 5b2a6e95f57b
+   37  docker ps -a
+   38  docker run -it -d --name jenkins -p 8080:8080 jenkins:jcasc
+   39  docker ps
+   40  docker ps -a
+   41  clear
+   42  history
+root@ip-172-31-31-190:~/playground/jcasc#
+***************************************************************************************************
+Webhook - Setup github:-
+---------------------------
+
+root@ip-172-31-31-190:~# history
+    1  clear
+    2  cat /etc/os-release
+    3  apt update && apt upgrade
+    4  clear
+    5  apt install elinks curl
+    6  apt install vim
+    7  apt install net-tools
+    8  lsof -i:80
+    9  lsof -i:443
+   10  clear
+   11  ls
+   12  ls -ltrh
+   13  ls -ltrha
+   14  ls -la
+   15  clear
+   16  ls
+   17  clear
+   18  sudo apt update
+   19  sudo apt install apt-transport-https ca-certificates curl software-properties-common
+   20  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+   21  sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+   22  apt-cache policy docker-ce
+   23  sudo apt install docker-ce
+   24  sudo systemctl status docker
+   25  docker ps
+   26  docker ps -a
+   27  ls
+   28  clear
+   29  mkdir -p $HOME/playground/jcasc
+   30  cd $HOME/playground/jcasc
+   31  vim $HOME/playground/jcasc/Dockerfile
+   32  docker build -t jenkins:jcasc .
+   33  docker run -it --name jenkins -p 8080:8080 jenkins:jcasc
+   34  docker ps
+   35  docker ps -a
+   36  docker rm 5b2a6e95f57b
+   37  docker ps -a
+   38  docker run -it -d --name jenkins -p 8080:8080 jenkins:jcasc
+   39  docker ps
+   40  docker ps -a
+   41  clear
+   42  history
+   43  docker ps
+   44  elinks 3.106.133.244
+   45  clear
+   46  docker ps
+   47  docker ps -o wide
+   48  docker ps wide
+   49  clear
+   50  docker ps
+   51  docker ps -a
+   52  elinks 172.31.31.190
+   53  elinks 172.31.31.190:8080
+   54  elinks 3.106.133.244:8080
+   55  clear
+   56  ls
+   57  ll
+   58  clear
+   59  ip -br a
+   60  lsof -i:8080
+   61  ll
+   62  ip a
+   63  ls
+   64  docker ps
+   65  docker stop 7ec72cf30eb2
+   66  docker rm 7ec72cf30eb2
+   67  docker ps
+   68  docker ps -a
+   69  docker image
+   70  docker images
+   71  docker rmi jenkins
+   72  docker rmi jenkins:latest
+   73  docker images
+   74  docker rmi jenkins:jcasc
+   75  docker images
+   76  cd $HOME/playground/jcasc
+   77  history
+   78  docker build -t jenkins:jcasc .
+   79  docker images
+   80  docker run -it -d --name jenkins -p 8080:8080 jenkins:jcasc
+   81  docker ps
+   82  docker ps -a
+   83  docker exec -it a983c21efb8c
+   84  docker attched jenkins
+   85  docker exec -it a983c21efb8c bash
+   86  clear
+   87  ls
+   88  ll
+   89  docker ps
+   90  docker ps -a
+   91  cd $HOME/playground/jcasc
+   92  ls
+   93  clear
+   94  docker ps
+   95  top
+   96  htop
+   97  clear
+   98  ps -ef | grep docker
+   99  clear
+  100  docker ps
+  101  docker ps -a
+  102  docker stop a983c21efb8c
+  103  docker rm a983c21efb8c
+  104  docker ps
+  105  docker run -p 8080:8080 -p 50000 50000 -d jenkins_home:/var/jenkins_home jenkins:jcasc
+  106  docker run -p 8080:8080 -p 50000:50000 -d jenkins_home:/var/jenkins_home jenkins:jcasc
+  107  docker images
+  108  docker ps
+  109  docker run -it -d --name jenkins -p 8080:8080 jenkins:jcasc
+  110  docker ps
+  111  docker ps -a
+  112  clear
+  113  elinks 3.106.133.244:8080
+  114  apt install
+  115  clear
+  116  elinks 172.31.31.190:8080
+  117  clear
+  118  docker ps
+  119  docker inspect 0e5dcbee4fef
+  120  elinks 172.17.0.2
+  121  elinks 172.17.0.2:8080
+  122  clear
+  123  docker ps
+  124  docker ps -a
+  125  docker logs -f 0e5dcbee4fef
+  126  clear
+  127  docker ps
+  128  elinks 172.17.0.2:8080
+  129  clear
+  130  docker ps
+  131  docker exec -it 0e5dcbee4fef bash
+  132  docker ps
+  133  docker ps
+  134  docker images
+  135  ls /var/jenkins_home/workspace/Aatish-DevOps
+  136  docker exec jenkins
+  137  docker exec jenkins ls /var/jenkins_home/workspace/Aatish-DevOps
+  138  docker exec jenkins -it
+  139  docker exec jenkins -it bash
+  140  docker exec -it jenkins bash
+  141  ip -br a
+  142  docker exec -it jenkins bash
+  143  adduser devopsadmin
+  144  su - devopsadmin
+  145  docker exec -it jenkins bash
+  146  su - devopsadmin
+  147  docker exec -it jenkins bash
+  148  usermod -aG docker devopsadmin
+  149  docker exec -it jenkins bash
+  150  docker ps
+  151  docker stop webserver
+  152  docker rm webserver
+  153  watch -d docker ps -a
+  154  docker stop webserver
+  155  docker rm webserver
+  156  watch -d docker ps -a
+  157  clear
+  158  history
+root@ip-172-31-31-190:~#
+
+****************************************************************
+root@ip-172-31-31-190:~# docker ps
+CONTAINER ID   IMAGE           COMMAND                  CREATED         STATUS         PORTS                                                  NAMES
+f2e5198c236b   httpd           "httpd-foreground"       9 minutes ago   Up 9 minutes   0.0.0.0:81->80/tcp, :::81->80/tcp                      webserver
+0e5dcbee4fef   jenkins:jcasc   "/usr/bin/tini -- /u…"   2 hours ago     Up 2 hours     0.0.0.0:8080->8080/tcp, :::8080->8080/tcp, 50000/tcp   jenkins
+root@ip-172-31-31-190:~#
+*************************************************************************************************************
+
+Inside Container
+
+jenkins@0e5dcbee4fef:/$ history
+    1  clear
+    2  cd
+    3  clear
+    4  cd /var/
+    5  ls
+    6  cd jenkins_home/
+    7  ls
+    8  ll
+    9  ls
+   10  apt install git
+   11  clear
+   12  github -v
+   13  git -v
+   14  clear
+   15  ssh 172.31.31.190
+   16  ssh-keygen -t rsa
+   17  cat /var/jenkins_home/.ssh/id_rsa.pub
+   18  ssh devopsadmin@ip-172-31-31-190
+   19  devopsadmin@ip-172-31-31-190 docker run -it --name webserver -p 81:80 httpd
+   20  ssh devopsadmin@ip-172-31-31-190 docker run -it --name webserver -p 81:80 httpd
+   21  ssh -tt devopsadmin@ip-172-31-31-190 docker run -it --name webserver -p 81:80 httpd
+   22  ssh devopsadmin@ip-172-31-31-190 docker run --name webserver -p 81:80 httpd
+   23  ssh devopsadmin@ip-172-31-31-190 docker run --name webserver -p 81:80 httpd
+   24  ssh devopsadmin@ip-172-31-31-190 docker ps
+   25  clear
+   26  history
+jenkins@0e5dcbee4fef:/$
+--------------------------------------------------------------
